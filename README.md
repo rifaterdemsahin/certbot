@@ -32,8 +32,8 @@ Before you begin, ensure you have the following:
 1. **Update your package list and install Certbot**:
 
    ```bash
-   sudo apt update
-   sudo apt install certbot python3-certbot-nginx
+   sudo apt update -y
+   sudo apt install certbot python3-certbot-nginx -y
    ```
 
 2. **Verify Certbot installation**:

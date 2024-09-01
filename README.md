@@ -26,6 +26,8 @@ Before you begin, ensure you have the following:
 - Basic familiarity with the Linux command line.
 
 ## Installation
+ Create an AWS Server with Ubuntu
+ Add the necessary firewall rules http https ssl
 
 1. **Update your package list and install Certbot**:
 

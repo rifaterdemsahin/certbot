@@ -1,3 +1,7 @@
+Here's a revised version of your README file with corrected Markdown formatting and improved clarity:
+
+---
+
 # README: Certbot Proof of Concept
 
 This repository provides a detailed proof of concept (PoC) for using **Certbot** to automate the process of obtaining, installing, and renewing SSL/TLS certificates for a website. By following this guide, you'll learn how to set up Certbot on an Ubuntu server with Nginx, configure your website to use HTTPS, and automate the certificate renewal process.
@@ -26,17 +30,21 @@ Before you begin, ensure you have the following:
 - Basic familiarity with the Linux command line.
 
 ## Installation
- Create an AWS Server with Ubuntu
- Add the necessary firewall rules http https ssl
 
-1. **Update your package list and install Certbot**:
+To get started with Certbot, follow these steps:
+
+1. **Create an AWS Server with Ubuntu**:
+   
+   Ensure that the server has the necessary firewall rules for HTTP, HTTPS, and SSL.
+
+2. **Update your package list and install Certbot**:
 
    ```bash
    sudo apt update -y
    sudo apt install certbot python3-certbot-nginx -y
    ```
 
-2. **Verify Certbot installation**:
+3. **Verify Certbot installation**:
 
    Run the following command to check if Certbot was installed correctly:
 
@@ -46,7 +54,7 @@ Before you begin, ensure you have the following:
 
 ## Obtaining an SSL Certificate
 
-1. **Run Certbot with Nginx plugin**:
+1. **Run Certbot with the Nginx plugin**:
 
    Use Certbot to obtain a certificate and configure Nginx to use it:
 
@@ -56,9 +64,25 @@ Before you begin, ensure you have the following:
 
    Replace `yourdomain.com` with your actual domain name.
 
+   Example commands history:
+
+   ```
+   1. clear
+   2. sudo apt update
+   3. sudo apt install certbot python3-certbot-nginx -y
+   4. certbot --version
+   5. sudo apt install certbot python3-certbot-nginx -y
+   6. nginx -version
+   7. sudo certbot
+   8. sudo certbot --nginx -d cert.devops.engineering
+   9. dig cert.devops.engineering
+   10. ping cert.devops.engineering
+   11. dig cert.devops.engineering
+   ```
+
 2. **Follow the prompts**:
 
-   Certbot will ask for your email address and agreement to the Let’s Encrypt terms of service. Follow the on-screen instructions to complete the setup.
+   Certbot will ask for your email address and agreement to the Let's Encrypt terms of service. Follow the on-screen instructions to complete the setup.
 
 ## Automating Certificate Renewal
 
@@ -74,7 +98,7 @@ Before you begin, ensure you have the following:
 
 2. **Schedule automatic renewal with Cron**:
 
-   Certbot should automatically configure a cron job, but you can manually add one to ensure certificates are renewed twice daily:
+   Certbot usually configures a cron job automatically, but you can manually add one to ensure certificates are renewed twice daily:
 
    ```bash
    sudo crontab -e
@@ -90,7 +114,7 @@ Before you begin, ensure you have the following:
 
 - **Verify HTTPS is working**:
 
-  After obtaining the certificate, visit your site using `https://` to ensure the SSL is active.
+  After obtaining the certificate, visit your site using `https://` to ensure SSL is active.
 
 - **Check renewal logs**:
 
@@ -103,3 +127,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 By following this README, you should have a fully automated SSL/TLS certificate setup using Certbot, ensuring your website is secure with minimal manual intervention. For more information, visit the [Certbot website](https://certbot.eff.org/).
+
+---
+
+This revised README should provide clear and correct guidance for setting up and maintaining SSL/TLS certificates with Certbot.

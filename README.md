@@ -130,4 +130,10 @@ By following this README, you should have a fully automated SSL/TLS certificate 
 
 ---
 
-This revised README should provide clear and correct guidance for setting up and maintaining SSL/TLS certificates with Certbot.
+Sure! Here’s your text with emojis:
+
+**🔗 Connect with me:**
+- 💼 LinkedIn: [https://www.linkedin.com/in/rifaterdemsahin/](https://www.linkedin.com/in/rifaterdemsahin/)
+- 🐦 Twitter: [https://x.com/rifaterdemsahin](https://x.com/rifaterdemsahin)
+- 🎥 YouTube: [https://www.youtube.com/@RifatErdemSahin](https://www.youtube.com/@RifatErdemSahin)
+- 💻 GitHub: [https://github.com/rifaterdemsahin](https://github.com/rifaterdemsahin)
